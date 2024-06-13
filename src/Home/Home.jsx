@@ -3,6 +3,7 @@ import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
 import Footer from "../Shared/Footer";
 import ItemSection from "./ItemSection";
+import CategorySection from "./CategorySection/CategorySection";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <ItemSection></ItemSection>
+            <CategorySection></CategorySection>
             <Footer></Footer>
         </div>
     );

@@ -40,9 +40,9 @@ const Routes = new createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: "/view_details/:id",
+                path: "/view_details/:_id",
                 element: <ViewDetails></ViewDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/items/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/items/${params._id}`)
             }
         ]
     },
