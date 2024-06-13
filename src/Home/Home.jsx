@@ -4,6 +4,8 @@ import Banner from "./Banner";
 import Footer from "../Shared/Footer";
 import ItemSection from "./ItemSection";
 import CategorySection from "./CategorySection/CategorySection";
+import FAQ from "./FAQ";
+import Discount from "./Discount";
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <Banner></Banner>
             <ItemSection></ItemSection>
             <CategorySection></CategorySection>
+            <Discount></Discount>
+            <FAQ></FAQ>
             <Footer></Footer>
         </div>
     );
