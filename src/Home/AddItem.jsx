@@ -1,9 +1,52 @@
 import { Helmet } from "react-helmet-async";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
+import Swal from "sweetalert2";
+
 
 
 const AddItem = () => {
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const form = e.target;
+        const image = form.photo.value;
+        const item_name = form.item_name.value;
+        const subcategory_name = form.subcategory_name.value;
+        const short_description = form.short_description.value;
+        const price = form.price.value;
+        const rating = form.rating.value;
+        const customization = form.customization.value;
+        const processing_time = form.processing_time.value;
+        const stock_status = form.stock_status.value;
+        const email = form.email.value;
+        const name = form.name.value;
+
+        const newItems = { image, item_name, subcategory_name, short_description, price, rating, customization, processing_time, stock_status, email, name }
+        console.log(newItems);
+
+        fetch('http://localhost:5000/newItems', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newItems)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'New Item Added Successfully!',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
+
+    }
+
     return (
         <div>
             <Helmet>
@@ -11,7 +54,7 @@ const AddItem = () => {
             </Helmet>
             <Navbar></Navbar>
             <div className="p-24">
-                <form action="" className="p-10 bg-gray-200">
+                <form onSubmit={handleSubmit} action="" className="p-10 bg-gray-200">
                     <h1 className="font-bold font-display text-3xl text-center text-green-950 mb-8">Add New Item</h1>
                     <div className="flex gap-10">
                         <div className="w-1/2">

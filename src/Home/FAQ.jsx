@@ -1,7 +1,7 @@
 
 const FAQ = () => {
     return (
-        <div className="flex gap-8 mx-10 my-12 border-2 border-gray-300 p-4 rounded-lg">
+        <div className="flex gap-8 mx-10 my-12 border-2 border-gray-300 p-4 rounded-lg bg-white">
             <div className="w-1/2 p-4">
                 <h1 className="font-bold font-display text-4xl mb-4">Frequently Asked Questions</h1>
                 <p>Unveiling the Magic of Clay: Your Burning Questions about Our Ceramics Answered</p>
@@ -11,7 +11,7 @@ const FAQ = () => {
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" defaultChecked />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">
-                       1) Are your ceramics dishwasher and microwave safe?
+                        1) Are your ceramics dishwasher and microwave safe?
                     </div>
                     <div className="collapse-content">
                         <p>It depends on the specific product. Look for the dishwasher and microwave safe icons on the product page or description. Since some glazes or decorations might not be heat resistant, handwashing is always recommended to ensure the longevity of your ceramics.</p>
@@ -20,7 +20,7 @@ const FAQ = () => {
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">
-                       2) Do you offer custom-made ceramics?
+                        2) Do you offer custom-made ceramics?
                     </div>
                     <div className="collapse-content">
                         <p>We may offer custom-made ceramics for special occasions or larger orders. Please contact us directly to discuss your specific needs and inquire about customization options.</p>
@@ -29,7 +29,7 @@ const FAQ = () => {
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">
-                       3) How fragile are your ceramics?
+                        3) How fragile are your ceramics?
                     </div>
                     <div className="collapse-content">
                         <p>Our ceramics are crafted with durable stoneware or porcelain clays and fired at high temperatures for strength. However, like any ceramic product, they can still break if dropped or mishandled. Treat them with care and enjoy them for years to come.</p>
@@ -38,7 +38,7 @@ const FAQ = () => {
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">
-                       4) What type of cleaning is recommended for your ceramics?
+                        4) What type of cleaning is recommended for your ceramics?
                     </div>
                     <div className="collapse-content">
                         <p>For most of our ceramics, gentle handwashing with warm water and mild dish soap is recommended. Avoid using abrasive scrubbers or harsh chemicals. For heavily stained pieces, baking soda can be used as a natural cleaning agent.</p>
@@ -47,10 +47,28 @@ const FAQ = () => {
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">
-                       5) Do you offer gift wrapping or gift certificates?
+                        5) Do you offer gift wrapping or gift certificates?
                     </div>
                     <div className="collapse-content">
-                        <p>Yes, We offer beautiful gift wrapping for a special touch (mention any additional fees). Gift certificates are also available in various denominations, making the perfect present for the pottery lover in your life!</p>
+                        <p>Yes, We offer beautiful gift wrapping for a special touch. Gift certificates are also available in various denominations, making the perfect present for the pottery lover in your life!</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div className="collapse-title text-xl font-medium font-display text-green-950">
+                        6) How do I care for my new ceramic piece?
+                    </div>
+                    <div className="collapse-content">
+                        <p>For most ceramics, gentle handwashing with warm water and mild dish soap is recommended. Avoid abrasive scrubbers or harsh chemicals. Baking soda can be used as a natural cleaning agent for stubborn stains.</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div className="collapse-title text-xl font-medium font-display text-green-950">
+                        7) Are your ceramics safe for food use?
+                    </div>
+                    <div className="collapse-content">
+                        <p>Absolutely! We use high-quality, food-safe glazes on all our ceramic pieces designed for food and beverage consumption. These glazes are rigorously tested to ensure they meet safety standards for contact with food.</p>
                     </div>
                 </div>
             </div>
