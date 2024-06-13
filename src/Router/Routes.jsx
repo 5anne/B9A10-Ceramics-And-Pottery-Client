@@ -8,6 +8,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import AllItems from "../Home/AllItems";
 import PrivateRoute from "./PrivateRoute";
+import ViewDetails from "../Home/ViewDetails";
 
 const Routes = new createBrowserRouter([
     {
@@ -37,6 +38,11 @@ const Routes = new createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>
+            },
+            {
+                path: "/view_details/:id",
+                element: <ViewDetails></ViewDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/items/${params.id}`)
             }
         ]
     },
