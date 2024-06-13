@@ -3,9 +3,9 @@ import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
 import Footer from "../Shared/Footer";
 import ItemSection from "./ItemSection";
-import CategorySection from "./CategorySection/CategorySection";
 import FAQ from "./FAQ";
 import Discount from "./Discount";
+import CategorySection from "./CategorySection";
 
 const Home = () => {
     return (
