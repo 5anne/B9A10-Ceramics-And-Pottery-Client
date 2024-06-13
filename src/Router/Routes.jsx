@@ -7,6 +7,7 @@ import MyList from "../Home/MyList";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import AllItems from "../Home/AllItems";
+import PrivateRoute from "./PrivateRoute";
 
 const Routes = new createBrowserRouter([
     {
@@ -23,11 +24,11 @@ const Routes = new createBrowserRouter([
             },
             {
                 path: "/add_item",
-                element: <AddItem></AddItem>
+                element: <PrivateRoute><AddItem></AddItem></PrivateRoute>
             },
             {
                 path: "/my_list",
-                element: <MyList></MyList>
+                element: <PrivateRoute><MyList></MyList></PrivateRoute>
             },
             {
                 path: "/login",

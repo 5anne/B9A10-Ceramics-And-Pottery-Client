@@ -78,7 +78,8 @@ const Register = () => {
     const handleGoogleSignIn = () => {
         signInWithGoogle()
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 console.error(error)
@@ -88,7 +89,8 @@ const Register = () => {
     const handleGithub = () => {
         signInWithGitHub()
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 console.error(error)
