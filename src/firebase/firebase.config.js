@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCIgjVj1hIW8m7dlZaXAbluFrJKt3n79RU",
-    authDomain: "clay-pot-cba02.firebaseapp.com",
-    projectId: "clay-pot-cba02",
-    storageBucket: "clay-pot-cba02.appspot.com",
-    messagingSenderId: "745548998499",
-    appId: "1:745548998499:web:ad3b1ee6fa4d135f1b5556"
+    apiKey: import.meta.env.VITE_APIKEY,
+    authDomain: import.meta.env.VITE_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_PROJECTID,
+    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

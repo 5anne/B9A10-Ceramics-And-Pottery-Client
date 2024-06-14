@@ -1,5 +1,4 @@
 
-
 const Discount = () => {
     return (
         <div className="bg-no-repeat bg-cover bg-center mx-10 my-12 p-20" style={{ backgroundImage: 'url(https://i.postimg.cc/05cd0WK1/Michelle-Grimm-9-2048x2048.webp)' }}>

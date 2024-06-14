@@ -49,7 +49,7 @@ const MyList = () => {
                             setItems(remaining);
                             Swal.fire({
                                 title: "Deleted!",
-                                text: "Your file has been deleted.",
+                                text: "Your file has been deleted. Please Reload!",
                                 icon: "success"
                             });
                         }

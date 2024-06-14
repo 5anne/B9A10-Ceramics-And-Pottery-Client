@@ -116,7 +116,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="file" onChange={handleChange} accept="image/*" placeholder="Photo URL" name="photo" className="input rounded-none input-bordered py-2" required />
+                            <input type="file" onChange={handleChange} placeholder="Photo URL" name="photo" className="input rounded-none input-bordered py-2" required />
                         </div>
                         <div className="form-control">
                             <label className="label">

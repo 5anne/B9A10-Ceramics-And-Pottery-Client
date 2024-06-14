@@ -10,7 +10,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-start text-white text-center md:text-start py-12">
                     <div className="leading-loose my-4 md:my-0">
-                        <h1 className="text-gray-300 font-semibold font-display">CLAY POT HOUSE</h1>
+                        <h1 className="text-gray-300 font-semibold font-display">CLAY  POT  HOUSE</h1>
                         <p className="text-gray-400 text-sm">Copyright © 2024 - All right reserved</p>
                     </div>
                     <nav className="my-4 md:my-0">

@@ -63,7 +63,7 @@ const AddItem = () => {
                                 <label className="label">
                                     <span className="label-text font-display">Photo URL</span>
                                 </label>
-                                <input type="url" name="photo" placeholder="Photo URL" className="input input-bordered" required />
+                                <input type="url" name="photo" placeholder="https://postimg.cc/..." className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -101,7 +101,7 @@ const AddItem = () => {
                                 <label className="label">
                                     <span className="label-text">Customization</span>
                                 </label>
-                                <input type="text" name="customization" placeholder="Customization" className="input input-bordered" required />
+                                <input type="text" name="customization" placeholder="example- yes/no" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -113,7 +113,7 @@ const AddItem = () => {
                                 <label className="label">
                                     <span className="label-text">Stock Status</span>
                                 </label>
-                                <input type="text" name="stock_status" placeholder="Stock Status" className="input input-bordered" required />
+                                <input type="text" name="stock_status" placeholder="example- In stock, Made to Order" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
