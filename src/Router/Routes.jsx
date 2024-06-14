@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../Home/ViewDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import ShowDetails from "../Home/ShowDetails";
+import Update from "../Home/Update";
 
 const Routes = new createBrowserRouter([
     {
@@ -32,7 +33,8 @@ const Routes = new createBrowserRouter([
             },
             {
                 path: "/my_list",
-                element: <PrivateRoute><MyList></MyList></PrivateRoute>
+                element: <PrivateRoute><MyList></MyList></PrivateRoute>,
+                loader: () => fetch('http://localhost:5000/newItems')
             },
             {
                 path: "/login",
@@ -50,6 +52,11 @@ const Routes = new createBrowserRouter([
             {
                 path: "/show_details/:_id",
                 element: <PrivateRoute><ShowDetails></ShowDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/newItems/${params._id}`)
+            },
+            {
+                path: "/update/:_id",
+                element:<PrivateRoute><Update></Update></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/newItems/${params._id}`)
             }
         ]
