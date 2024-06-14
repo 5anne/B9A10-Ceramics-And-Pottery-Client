@@ -10,6 +10,7 @@ import AllItems from "../Home/AllItems";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../Home/ViewDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import ShowDetails from "../Home/ShowDetails";
 
 const Routes = new createBrowserRouter([
     {
@@ -45,6 +46,11 @@ const Routes = new createBrowserRouter([
                 path: "/view_details/:_id",
                 element: <ViewDetails></ViewDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/items/${params._id}`)
+            },
+            {
+                path: "/show_details/:_id",
+                element: <PrivateRoute><ShowDetails></ShowDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/newItems/${params._id}`)
             }
         ]
     },
