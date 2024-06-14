@@ -34,7 +34,7 @@ const Update = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if (data.insertedId) {
+                if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success!',
                         text: 'Item Updated Successfully!',
@@ -60,7 +60,7 @@ const Update = () => {
                                 <label className="label">
                                     <span className="label-text font-display">Photo URL</span>
                                 </label>
-                                <input type="file" name="photo" placeholder="Photo" className="input input-bordered pt-2" required />
+                                <input type="url" defaultValue={item.image} name="photo" placeholder="Photo URL" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -82,7 +82,7 @@ const Update = () => {
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text font-display">Price</span>
+                                    <span className="label-text font-display">Price ($)</span>
                                 </label>
                                 <input type="number" defaultValue={item.price} name="price" placeholder="Price" className="input input-bordered" required />
                             </div>
@@ -105,7 +105,7 @@ const Update = () => {
                                 <label className="label">
                                     <span className="label-text font-display">Processing Time</span>
                                 </label>
-                                <input type="time" defaultValue={item.processing_time} name="processing_time" placeholder="Processing Time" className="input input-bordered" required />
+                                <input type="datetime-local" defaultValue={item.processing_time} name="processing_time" placeholder="Processing Time" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
