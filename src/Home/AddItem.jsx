@@ -42,6 +42,7 @@ const AddItem = () => {
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
+                    form.reset();
                 }
             })
 
