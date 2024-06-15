@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const AllItems = () => {
     const [allItems, setAllItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/newItems')
+        fetch('https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems')
             .then(res => res.json())
             .then(data => setAllItems(data))
     }, [])

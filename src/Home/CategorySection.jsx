@@ -1,4 +1,3 @@
-//w-[400px] h-[250px]
 
 const CategorySection = () => {
     return (

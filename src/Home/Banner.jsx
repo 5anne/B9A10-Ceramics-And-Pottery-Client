@@ -1,5 +1,4 @@
 
-
 const Banner = () => {
     return (
         <div className="w-11/12 lg:w-[1000px] my-10 mx-auto">

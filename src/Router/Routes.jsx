@@ -34,7 +34,7 @@ const Routes = new createBrowserRouter([
             {
                 path: "/my_list",
                 element: <PrivateRoute><MyList></MyList></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/newItems')
+                loader: () => fetch('https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems')
             },
             {
                 path: "/login",
@@ -47,17 +47,17 @@ const Routes = new createBrowserRouter([
             {
                 path: "/view_details/:_id",
                 element: <ViewDetails></ViewDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/items/${params._id}`)
+                loader: ({ params }) => fetch(`https://ceramics-and-pottery-server-8751zqvxj.vercel.app/items/${params._id}`)
             },
             {
                 path: "/show_details/:_id",
                 element: <PrivateRoute><ShowDetails></ShowDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/newItems/${params._id}`)
+                loader: ({ params }) => fetch(`https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems/${params._id}`)
             },
             {
                 path: "/update/:_id",
                 element:<PrivateRoute><Update></Update></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/newItems/${params._id}`)
+                loader: ({ params }) => fetch(`https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems/${params._id}`)
             },
         ]
     },

@@ -24,7 +24,7 @@ const Update = () => {
         const updatedItems = { image, item_name, subcategory_name, short_description, price, rating, customization, processing_time, stock_status }
         console.log(updatedItems);
 
-        fetch(`http://localhost:5000/newItems/${item._id}`, {
+        fetch(`https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems/${item._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

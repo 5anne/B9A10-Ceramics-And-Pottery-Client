@@ -25,7 +25,7 @@ const AddItem = () => {
         const newItems = { image, item_name, subcategory_name, short_description, price, rating, customization, processing_time, stock_status, email, name }
         console.log(newItems);
 
-        fetch('http://localhost:5000/newItems', {
+        fetch('https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

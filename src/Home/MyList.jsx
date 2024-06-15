@@ -14,7 +14,7 @@ const MyList = () => {
     const [items, setItems] = useState([]);
     const [displayItems, setDisplayItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/newItems')
+        fetch('https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems')
             .then(res => res.json())
             .then(data => {
                 if (!loading) {
@@ -39,7 +39,7 @@ const MyList = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/newItems/${id}`, {
+                fetch(`https://ceramics-and-pottery-server-8751zqvxj.vercel.app/newItems/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
