@@ -14,7 +14,7 @@ const ViewDetails = () => {
             </Helmet>
             <Navbar></Navbar>
             <div className="bg-gray-100 p-8 flex justify-center">
-                <div className="flex gap-4 my-10 mx-10 bg-white shadow-lg w-1/2">
+                <div className="flex flex-col-reverse md:flex-row gap-4 my-10 md:mx-10 bg-white shadow-lg lg:w-1/2">
                     <div className="p-4 space-y-1">
                         <h1 className="font-bold font-display text-2xl text-cyan-950">{item.item_name}</h1>
                         <p className="font-bold font-display text-xl text-cyan-900">Description: <span className="text-lg font-light">{item.description}</span></p>
@@ -31,7 +31,7 @@ const ViewDetails = () => {
                             <input type="radio" name="rating-1" className="mask mask-star" checked />
                         </div>
                     </div>
-                    <img className="w-1/2 h-[300px]" src={item.image} alt="" />
+                    <img className="md:w-1/2 h-[300px]" src={item.image} alt="" />
                 </div>
             </div>
             <Footer></Footer>

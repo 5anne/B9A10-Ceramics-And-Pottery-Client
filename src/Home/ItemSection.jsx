@@ -10,7 +10,7 @@ const ItemSection = () => {
             .then(data => setItems(data))
     }, [])
     return (
-        <div className="mx-12 my-8">
+        <div className="mx-8 md:mx-12 my-8">
             <div className="flex justify-between items-center">
                 <h1 className="font-display font-bold text-4xl">Our Latest Items</h1>
                 <button className="bg-emerald-900 px-4 py-3 text-white font-semibold">Shop Now</button>

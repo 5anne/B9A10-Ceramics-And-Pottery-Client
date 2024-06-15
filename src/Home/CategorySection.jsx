@@ -2,10 +2,10 @@
 
 const CategorySection = () => {
     return (
-        <div className="my-16 mx-12">
+        <div className="my-16 mx-8 md:mx-12">
             <p className="text-center text-2xl font-display font-bold text-amber-700">Our Products</p>
             <h1 className="text-center text-5xl font-display my-8">Welcome to the world of handcrafted ceramics!</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div className="p-8 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: 'url(https://i.postimg.cc/cHtW9htR/Pottery-workshop-in-Rome-for-kids-Rome-for-kids.jpg)' }}>
                     <h1 className="text-white font-semibold font-display text-center text-3xl">Clay-made pottery</h1>
                     <p className="text-gray-200 text-center text-sm my-3">Crafted from the earth, each piece of clay pottery is a unique work of art, shaped by skilled hands.</p>

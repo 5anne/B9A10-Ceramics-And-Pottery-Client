@@ -14,8 +14,8 @@ const ShowDetails = () => {
             </Helmet>
             <Navbar></Navbar>
             <div className="bg-gray-100 p-8 flex justify-center">
-                <div className="flex flex-row-reverse gap-4 my-10 mx-10 bg-white shadow-lg w-1/2">
-                    <div className="p-4 space-y-1 w-1/2">
+                <div className="flex flex-col md:flex-row-reverse gap-4 my-10 md:mx-10 bg-white shadow-lg lg:w-1/2">
+                    <div className="p-4 space-y-1 md:w-1/2">
                         <h1 className="font-bold font-display text-2xl text-cyan-950">{item.item_name}</h1>
                         <p><span className="font-semibold">Category Name: </span>{item.subcategory_name}</p>
                         <p><span className="font-semibold">Short Description: </span>{item.short_description}</p>
@@ -25,7 +25,7 @@ const ShowDetails = () => {
                         <p><span className="font-semibold">Stock Status: </span>{item.stock_status}</p>
                         <p><span className="font-semibold">Rating:</span> {item.rating}</p>
                     </div>
-                    <img className="w-1/2 h-[300px] p-2" src={item.image} alt="Image should be .png file" />
+                    <img className="md:w-1/2 h-[300px] p-2" src={item.image} alt="Image should be .png file" />
                 </div>
             </div>
             <Footer></Footer>

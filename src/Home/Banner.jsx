@@ -2,11 +2,11 @@
 
 const Banner = () => {
     return (
-        <div className="w-[1000px] my-10 mx-auto">
+        <div className="w-11/12 lg:w-[1000px] my-10 mx-auto">
             <div>
                 <div className="carousel w-full">
                     <div id="item1" className="carousel-item w-full">
-                        <div className="hero w-[1000px] h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/g0Rfd5rX/Mexican-Folk-Art-Mata-Ortiz-pottery-2-1.webp)' }}>
+                        <div className="hero lg:w-[1000px] lg:h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/g0Rfd5rX/Mexican-Folk-Art-Mata-Ortiz-pottery-2-1.webp)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className="max-w-md">
@@ -18,7 +18,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <div id="item2" className="carousel-item w-full">
-                        <div className="hero w-[1000px] h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/Dw7ZFhdp/half-dipped-stoneware-vases-slate-fwh.jpg)' }}>
+                        <div className="hero lg:w-[1000px] lg:h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/Dw7ZFhdp/half-dipped-stoneware-vases-slate-fwh.jpg)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className="max-w-md">
@@ -30,7 +30,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <div id="item3" className="carousel-item w-full">
-                        <div className="hero w-[1000px] h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/Hxw1vccS/R.jpg)' }}>
+                        <div className="hero lg:w-[1000px] lg:h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/Hxw1vccS/R.jpg)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className="max-w-md">
@@ -42,7 +42,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <div id="item4" className="carousel-item w-full">
-                        <div className="hero w-[1000px] h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/9X1sWyXp/5301e659d3a695550f94e7bd47ed92b5.jpg)' }}>
+                        <div className="hero lg:w-[1000px] lg:h-[500px]" style={{ backgroundImage: 'url(https://i.postimg.cc/9X1sWyXp/5301e659d3a695550f94e7bd47ed92b5.jpg)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className="max-w-md">

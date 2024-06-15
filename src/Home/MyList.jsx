@@ -84,7 +84,7 @@ const MyList = () => {
                 <title>Clay Pot || my_list</title>
             </Helmet>
             <Navbar></Navbar>
-            <div className="bg-black py-16 px-28">
+            <div className="bg-black py-16 px-8 md:px-28">
                 <div className="flex justify-center items-center gap-2 mb-10 border-2 border-white w-28 mx-auto">
                     <h1 className="font-bold font-display text-2xl text-gray-200 ">Filter</h1>
                     <div className="dropdown">
@@ -97,7 +97,7 @@ const MyList = () => {
                     </div>
                 </div>
                 {
-                    displayItems.map(item => <div key={item._id} className="bg-transparent border-2 border-white rounded-lg p-10 grid grid-cols-3 gap-8 mb-10">
+                    displayItems.map(item => <div key={item._id} className="bg-transparent border-2 border-white rounded-lg p-10 grid lg:grid-cols-3 gap-8 mb-10">
                         <img className="h-[200px]" src={item.image} alt="" />
                         <div className="space-y-1 text-gray-400">
                             <h1 className="font-bold font-display text-2xl text-cyan-950">{item.item_name}</h1>

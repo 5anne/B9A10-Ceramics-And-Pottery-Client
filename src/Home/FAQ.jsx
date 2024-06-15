@@ -1,13 +1,13 @@
 
 const FAQ = () => {
     return (
-        <div className="flex gap-8 mx-10 my-12 border-2 border-gray-300 p-4 rounded-lg bg-white">
-            <div className="w-1/2 p-4">
+        <div className="lg:flex gap-8 mx-8 md:mx-10 my-12 border-2 border-gray-300 p-4 rounded-lg bg-white">
+            <div className="lg:w-1/2 p-4">
                 <h1 className="font-bold font-display text-4xl mb-4">Frequently Asked Questions</h1>
                 <p>Unveiling the Magic of Clay: Your Burning Questions about Our Ceramics Answered</p>
                 <img className="w-[400px]" src="https://i.postimg.cc/brCkLq7V/03.jpg" alt="" />
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" defaultChecked />
                     <div className="collapse-title text-xl font-medium font-display text-green-950">

@@ -51,11 +51,11 @@ const Update = () => {
                 <title>Clay Pot || update_{item._id}</title>
             </Helmet>
             <Navbar></Navbar>
-            <div className="p-24">
+            <div className="md:p-24">
                 <form onSubmit={handleSubmit} action="" className="p-10 bg-gray-200">
                     <h1 className="font-bold font-display text-3xl text-center text-green-950 mb-8">Update Existing Item Details</h1>
-                    <div className="flex gap-10">
-                        <div className="w-1/2">
+                    <div className="md:flex gap-10">
+                        <div className="md:w-1/2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text font-display">Photo URL</span>
@@ -88,7 +88,7 @@ const Update = () => {
                             </div>
 
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text font-display">Rating</span>

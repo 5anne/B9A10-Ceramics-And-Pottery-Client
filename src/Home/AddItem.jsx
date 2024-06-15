@@ -54,11 +54,11 @@ const AddItem = () => {
                 <title>Clay Pot || add_item</title>
             </Helmet>
             <Navbar></Navbar>
-            <div className="p-24">
+            <div className="md:p-24">
                 <form onSubmit={handleSubmit} action="" className="p-10 bg-gray-200">
                     <h1 className="font-bold font-display text-3xl text-center text-green-950 mb-8">Add New Item</h1>
-                    <div className="flex gap-10">
-                        <div className="w-1/2">
+                    <div className="md:flex gap-10">
+                        <div className="md:w-1/2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text font-display">Photo URL</span>
@@ -96,7 +96,7 @@ const AddItem = () => {
                                 <input type="number" name="rating" placeholder="Rating" className="input input-bordered" required />
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Customization</span>

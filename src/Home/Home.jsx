@@ -17,12 +17,16 @@ const Home = () => {
             <Helmet>
                 <title>Clay Pot || Home</title>
             </Helmet>
-            <div className="relative"><Navbar></Navbar></div>
-            {
-                theme ?
-                    <div onClick={() => setTheme(false)} className="absolute top-10 text-white right-10"><BsToggle2Off /></div> :
-                    <div onClick={() => setTheme(true)} className="absolute top-10 text-white right-10"><BsToggle2On /></div>
-            }
+            <div className="relative">
+                <Navbar></Navbar>
+                <div className="">
+                    {
+                        theme ?
+                            <div onClick={() => setTheme(false)} className="absolute top-10 text-white right-48 lg:right-10"><BsToggle2Off /></div> :
+                            <div onClick={() => setTheme(true)} className="absolute top-10 text-white right-48 lg:right-10"><BsToggle2On /></div>
+                    }
+                </div>
+            </div>
             <Banner></Banner>
             <ItemSection></ItemSection>
             <CategorySection></CategorySection>
